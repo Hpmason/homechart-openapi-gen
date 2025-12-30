@@ -1,0 +1,6 @@
+{
+    "packageName": "homechart-openapi-gen",
+    "topLevelApiClient": "true",
+    "useBonBuilder": "true",
+    "library": "reqwest-trait"
+}
