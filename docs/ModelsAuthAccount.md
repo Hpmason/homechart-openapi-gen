@@ -1,0 +1,55 @@
+# ModelsAuthAccount
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**auth_oidc_client_ids** | Option<[**std::collections::HashMap<String, Vec<String>>**](Vec.md)> | AuthOIDCClientIDs and the scopes the AuthAccountID has granted access to. | [optional]
+**collapsed_notes_pages** | Option<**Vec<String>**> | A list of IDs to collapse. | [optional]
+**collapsed_plan_projects** | Option<**Vec<String>**> | A list of IDs to collapse. | [optional]
+**collapsed_plan_tasks** | Option<**Vec<String>**> | A list of IDs to collapse. | [optional]
+**created** | Option<**String**> | Timestamp account was created. | [optional]
+**daily_agenda_next** | Option<**String**> | The next timestamp for the agenda. | [optional]
+**daily_agenda_time** | Option<[**String**](string.md)> | When to send the daily agenda. | [optional]
+**delegations** | Option<[**Vec<models::ModelsAuthAccountDelegation>**](models.AuthAccountDelegation.md)> | List of Delegations | [optional]
+**email_address** | Option<**String**> | Primary email address of user. | [optional]
+**email_auth_disabled** | Option<**bool**> | EmailAuthDisabled disables EmailAuth. | [optional]
+**email_auth_token** | Option<[**uuid::Uuid**](uuid::Uuid.md)> | EmailAuthTokenJSON is used for EmailAuth during signin. | [optional]
+**health_item_correlation_hours** | Option<**i32**> | Number of hours to associate health item outputs to inputs. | [optional]
+**hide_calendar_i_calendars** | Option<**Vec<String>**> | A list of iCalendar IDs to hide. | [optional]
+**icalendar_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> | ICalendarID for the account. | [optional]
+**id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> | ID of the account. | [optional]
+**iso639_code** | Option<**String**> | ISO639Code is the code used for translations. | [optional]
+**last_activity** | Option<**String**> | Timestamp of the last time the account signed in. | [optional]
+**name** | Option<**String**> | Name of the AuthAccount user. | [optional]
+**oidc_code** | Option<**String**> | Code from OIDC provider to check during sign in/up. | [optional]
+**oidc_issuer** | Option<**String**> | Issuer name used for OIDC. | [optional]
+**oidc_state** | Option<**String**> | State used to generate OIDC keys. | [optional]
+**password** | Option<**String**> | Password to use for sign in/up. | [optional]
+**password_enabled** | Option<**bool**> | Whether the account is enabled for password authentication. | [optional]
+**permissions_account** | Option<[**models::ModelsPermissions**](models.Permissions.md)> | Permissions for the account when creating a new session. | [optional]
+**permissions_households** | Option<[**std::collections::HashMap<String, models::ModelsPermissions>**](models.Permissions.md)> | Permissions for the households when creating a new session. | [optional]
+**preferences** | Option<[**models::ModelsAuthAccountPreferences**](models.AuthAccountPreferences.md)> | Preferences for the account. | [optional]
+**primary_auth_household_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> | The primary AuthHouseholdID, used by short links. | [optional]
+**private_keys** | Option<[**Vec<models::ModelsAuthAccountPrivateKey>**](models.AuthAccountPrivateKey.md)> | PrivateKeys for decrypting secrets. | [optional]
+**public_key** | Option<[**models::CryptolibKeyCryptolibKeyProviderPublic**](cryptolib.Key-cryptolib_KeyProviderPublic.md)> | PublicKey for encrypting secrets. | [optional]
+**remember_me** | Option<**bool**> | Sets a longer timeout for the AuthSession. | [optional]
+**self_hosted_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> | SelfHosted ID of the account, used when creating CloudHouseholds. | [optional]
+**setup** | Option<**bool**> | Whether the account has gone through setup. | [optional]
+**time_zone** | Option<**String**> | Used by notifications and UI to determine local times. | [optional]
+**tos_accepted** | Option<**bool**> | ToS must be accepted to use the app. | [optional]
+**totp_backup** | Option<**String**> | Backup code to recover TOTP for JSON. | [optional]
+**totp_code** | Option<**String**> | Code from the TOTP generator. | [optional]
+**totp_enabled** | Option<**bool**> | Will check for TOTP code during sign in. | [optional]
+**totp_qr** | Option<**String**> | QR Code version of the TOTPSecret. | [optional]
+**totp_secret** | Option<**String**> | Secret to setup a TOTP generator for JSON. | [optional]
+**updated** | Option<**String**> | Timestamp for when account was last updated. | [optional]
+**user_agent** | Option<[**models::TypesUserAgent**](types.UserAgent.md)> | Sets the UserAgent for the initial session after account creation. | [optional]
+**verified** | Option<**bool**> | Accounts must be verified to receive email notifications. | [optional]
+**web_authn_creation** | Option<[**models::WebauthnCredentialCreation**](webauthn.CredentialCreation.md)> | WebAuthnCreation is used during signup and webauthnenrollment. | [optional]
+**web_authn_credentials** | Option<[**Vec<models::WebauthnCredential>**](webauthn.Credential.md)> | WebAuthnCredentials is a list of usable WebAuthn credentials for authenticating an AuthAccount. | [optional]
+**web_authn_request** | Option<[**models::WebauthnCredentialRequest**](webauthn.CredentialRequest.md)> | WebAuthnRequest is used during signin. | [optional]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
